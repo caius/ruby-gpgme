@@ -24,6 +24,13 @@ encryption, decryption, signing, signature verification and key management.}
   case RUBY_VERSION
   when "1.9.2"
     s.add_development_dependency "ruby-debug19" , "~> 0.11.6"
+  when "1.9.3"
+    # These need downloading from rubygems and installing by hand as of 2012-02-26 at least.
+    # Instructions: https://gist.github.com/1331533#gistcomment-65789
+    s.add_development_dependency "linecache19", "0.5.13"
+    s.add_development_dependency "ruby_core_source", "0.1.5"
+    s.add_development_dependency "ruby-base-debug19", "0.11.26"
+    s.add_development_dependency "ruby-debug19", "0.11.6"
   when /^1\.9/
     s.add_development_dependency "ruby-debug19"
   else
