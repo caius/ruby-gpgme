@@ -24,7 +24,9 @@ encryption, decryption, signing, signature verification and key management.}
   case RUBY_VERSION
   when "1.9.2"
     s.add_development_dependency "ruby-debug19" , "~> 0.11.6"
+  when /^1\.9/
+    s.add_development_dependency "ruby-debug19"
   else
-    s.add_development_dependency "ruby-debug" , "~> 0.10.4"
+    s.add_development_dependency "ruby-debug" , "0.10.0"
   end
 end
